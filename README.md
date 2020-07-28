@@ -148,10 +148,9 @@
 ## table4
 <table>
   <tbody>
-    <tr> <strong> table head </strong> </tr>
     <tr>
         <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix211.png", height=250px, width=250px>        </td>
-        <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix211.png", height=250px, width=250px>   </td>
+        <td>   <img src="https://github.com/Kang-Dong-Hwi/<pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix211.png", height=250px, width=250px>   </td>
         <td></td>
         <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix210.png", height=250px, width=250px>        </td>
         <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix210.png", height=250px, width=250px>   </td>
@@ -168,7 +167,7 @@
      <tr> <td colspan="4"> 
           <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px> 
      </td> </tr>
-
+     
   </tbody>
 </table>
 
