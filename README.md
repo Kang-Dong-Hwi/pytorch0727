@@ -37,7 +37,9 @@
 </table>
 
 
-
+<br>
+<br>
+<br>
 ### 2. xavier_uniform, kaiming_uniform
 -----------
 <table>
@@ -62,7 +64,9 @@
 </table>
 
 
-
+<br>
+<br>
+<br>
 ### 3. optimizer : Adam
 -----------
 <table>
@@ -137,7 +141,9 @@
 </table>
 
 
-
+<br>
+<br>
+<br>
 ## table4
 -------------
 <table>
