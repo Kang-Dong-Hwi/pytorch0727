@@ -160,10 +160,10 @@
       <td>4</td>
       <td>5</td>
     </tr>
-    <tr> 
-        <td colspan="4"> 
-          <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px> 
-        </td> 
+    <tr>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix214.png", height=250px, width=250px>        </td>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix214.png", height=250px, width=250px>        </td>
+      <td colspan="2">  <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px> </td> 
     </tr>
 
 </table>
