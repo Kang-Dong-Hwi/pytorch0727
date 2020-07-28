@@ -1,6 +1,131 @@
 # pytorch0727
 
 
+-------
+
+### mag, phase nomalization
+~~~python
+"""
+(257, 382) size의  numpy array 2개를 
+위아래로 붙인 뒤  ( 257*2, 382 ) size로 만들어 주고
+
+( 257 * 2 * 382 )개의 sample에 대한 평균, 표준편차로
+정규화해주었습니다.
+
+정규화된 numpy array (z) 의 shape을 (2, 257, 382)로 바꿔주고
+반환값은 tuple type으로 z[0]은 정규화된 left magnitude
+                        z[1]은 정규화된 right magnitude 입니다.
+"""
+
+def Mag_normalization( L, R ):
+    
+    samples = np.concatenate((L,R), axis=0)
+    mu = np.mean( samples )
+    sigma = np.std( samples )
+
+    z = (samples-mu) / sigma
+    z = z.reshape(2, L.shape[0], L.shape[1])
+    
+    return z[0], z[1]
+
+
+
+"""
+left phase와 right phase의 정규화는 따로 해주었습니다. """
+
+def Phase_normalization( phase ):
+    mu = np.mean( phase )
+    sigma = np.std( phase )
+    
+    z = ( phase - mu ) / sigma
+    return z
+~~~
+
+
+### model 학습
+----
+~~~python
+
+
+torch.manual_seed(100)
+criterion = nn.CrossEntropyLoss().to('cuda')
+
+
+'''optimizer'''
+
+#optimizer = torch.optim.Adagrad(model.parameters(), lr=lr, weight_decay=0.9)
+optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+#optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+
+
+
+
+
+EPOCHS = 50
+
+train_loss = []
+train_acc  = []
+
+
+# confusion matrix를 만들기 위해서 
+# 먼저 int type의 random값이 있는 
+# (1,) size torch tensor 초기화
+torch_pred  = torch.empty((1,), dtype=torch.int32).to('cuda')
+torch_label = torch.empty((1,), dtype=torch.int32).to('cuda')
+
+
+
+model.train()
+for epoch in range(EPOCHS):
+    #print('epoch ' + str(epoch+1))
+    total_loss = 0.0
+    total_acc = 0
+    
+    
+    for i, (data, label) in enumerate(train_dataset):
+        (data, label) = (data.to('cuda'), label.to('cuda'))
+
+        #zero the parameter gradients
+        optimizer.zero_grad()        
+
+        # forward + backward = optimize
+        output = model(data)
+        loss = criterion(output, label)
+        loss.backward()
+        optimizer.step()
+        
+
+        """loss, accuracy"""
+        # batch 정확도
+        preds  = torch.max(output.data, 1)[1]
+        corr  = (preds==label).sum().item()
+        acc   = corr/BATCH_SIZE*100
+
+        # epoch 손실도, 정확도
+        total_loss += loss.item()
+        total_acc += corr
+    
+        # batch 손실도, 정확도 출력, 저장
+        train_loss.append(loss)
+        train_acc.append(acc)
+        #if i%5==0: print('\tLoss: {:.3f}\tAcc: {:.3f}'.format(loss.item(), acc))
+
+
+        """ confusion matrix"""
+        if epoch == EPOCHS-1:
+            torch_pred  = torch.cat( [ torch_pred , preds.to( 'cuda', dtype=torch.int32) ], dim=0 )
+            torch_label = torch.cat( [ torch_label, label.to( 'cuda', dtype=torch.int32) ], dim=0 )
+
+
+    # epoch 손실도, 정확도 출력
+    print('epoch' + str(epoch+1) + '  >> Loss: {:.3f} \tAcc: {:.3f}'.format( total_loss, total_acc/800*100 ))
+    #print()
+~~~
+
+
+
+
+
 ### 1. optimizer : Adagrad  ( lr=0.00001, weight_decay=0.9 )
 -----
 <table>
@@ -42,6 +167,76 @@ training dataset, validation dataset에서 모두 처음 예측값으로만
 <br>
 
 ### 2. xavier_uniform, kaiming_uniform
+
+<br>
+
+~~~python
+import re
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+
+class CNN (nn.Module):
+    def __init__(self, INIT):
+        super(CNN, self).__init__()
+        ''' 4 * 257 * 382'''
+        self.conv1 = nn.Conv2d( in_channels=  4, out_channels= 64, kernel_size = (7,7), stride = (2,2) )
+        #relu
+        #pooling
+        
+        ''' 64 * 62 * 94'''
+        self.conv2 = nn.Conv2d( in_channels= 64, out_channels= 64, kernel_size = (3,3) )
+        #relu
+        #pooling
+
+
+        ''' 64 * 30 * 46'''
+        self.conv3 = nn.Conv2d( in_channels= 64, out_channels= 32, kernel_size = (3,3) )
+        #relu
+        #pooling
+
+
+        ''' 32 * 14 * 22'''
+        #flatten
+
+        self.lay1  = nn.Linear( 32*14*22, 256)
+        self.lay2  = nn.Linear( 256, 256 )
+        self.lay3  = nn.Linear( 256, 64 )
+        self.lay4  = nn.Linear( 64 , 11 )
+        
+
+        if INIT==1 :
+            # xavier initialization
+            nn.init.xavier_uniform_(self.conv1.weight)
+            nn.init.xavier_uniform_(self.conv2.weight)
+            nn.init.xavier_uniform_(self.conv3.weight)
+            
+            # kaiming he initialization
+            nn.init.kaiming_uniform_(self.lay1.weight)
+            nn.init.kaiming_uniform_(self.lay2.weight)
+            nn.init.kaiming_uniform_(self.lay3.weight)
+            nn.init.kaiming_uniform_(self.lay4.weight)
+
+
+        
+    def forward(self, output):
+        output = F.max_pool2d( F.relu( self.conv1(output) ),2 )
+        output = F.max_pool2d( F.relu( self.conv2(output) ),2 )
+        output = F.max_pool2d( F.relu( self.conv3(output) ),2 )
+        
+        output = output.view(-1, 32*14*22)
+        
+        output = F.relu( self.lay1(output) )
+        output = F.dropout(output, training=self.training)
+        output = F.relu( self.lay2(output) )
+        output = F.dropout(output, training=self.training)
+        output = F.relu( self.lay3(output) )
+        output = F.dropout(output, training=self.training)
+        output = F.log_softmax(self.lay4(output), dim=1)
+        
+        return output
+~~~
 -----------
 <table>
   <tr>
@@ -218,4 +413,5 @@ learning rate를 다양하게 해서 돌렸을V?? 때
   </tr>
 
 </table>
+
 
