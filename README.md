@@ -167,7 +167,8 @@ linear층 사이에는 kaiming_uniform 추가
 </table>
 
 
-Adam에서 변수??초기화 효과?? 가 없었습니다.  
+Adam에서 lr이 큰 값에서 변수??초기화 효과?? 가 없었습니다.  
+lr이 10e-6보다 작을 때 loss값이 오히려 높아지는 결과가 나왔습니다.
 learning rate를 다양하게 해서 돌렸을V?? 때  
 2*10e-5에서 loss값이 작게 측정되었습니다.
 
@@ -180,10 +181,12 @@ learning rate를 다양하게 해서 돌렸을V?? 때
 -------------
 <table>
   <tr>  <td colspan="5"> lr=2*10e-5 </td> </tr>
+  
   <tr>
         <td colspan="2">initializer X</td>
         <td colspan="2">initializer O</td>
   </tr>
+  
   <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
@@ -199,7 +202,13 @@ learning rate를 다양하게 해서 돌렸을V?? 때
   </tr>
   
   <tr>
-      <td colspan="4"> <br><br> epoch 200 </td>
+      <td colspan="4"> <br><br> epoch 200, initializerO </td>
+  </tr>
+  
+  <tr>
+        <td>training dataset</td>
+        <td>validation dataset</td>
+        <td colspan="2">training loss, accuracy</td>
   </tr>
   
   <tr>
