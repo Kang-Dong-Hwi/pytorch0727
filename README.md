@@ -150,7 +150,7 @@
 <table>
     <tr>
       <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix211.png", height=250px, width=250px>        </td>
-      <td>   <img src="https://github.com/Kang-Dong-Hwi/<pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix211.png", height=250px, width=250px>  </td>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix211.png", height=250px, width=250px>  </td>
       <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix210.png", height=250px, width=250px>        </td>
       <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix210.png", height=250px, width=250px>   </td>
     </tr>
