@@ -165,8 +165,8 @@
   </tr>
   
    <tr> <td> <strong>
-       <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px> 
-   </strong> </td> </tr>
+       
+   </strong> <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px>  </td> </tr>
  
 
 </table>
