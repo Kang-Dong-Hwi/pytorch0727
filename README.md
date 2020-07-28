@@ -198,8 +198,8 @@ learning rate를 다양하게 해서 돌렸을V?? 때
       <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix210.png", height=200px, width=250px>   </td>
   </tr>
   
-  <tr rowspan="2">
-      <td colspan="4">  epoch 200 </td>
+  <tr>
+      <td colspan="4"> <br><br> epoch 200 </td>
   </tr>
   
   <tr>
