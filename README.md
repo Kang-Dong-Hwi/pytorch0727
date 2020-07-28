@@ -97,7 +97,7 @@ linear층 사이에는 kaiming_uniform 추가
   </tr>
   
   
-  <tr>  <td colspan="5"> lr=10e-4 </td> </tr>
+  <tr>  <td colspan="5"> <br><br> lr=10e-4 </td> </tr>
   <tr>
         <td colspan="2">initializer X</td> <td></td>
         <td colspan="2">initializer O</td>
@@ -120,7 +120,7 @@ linear층 사이에는 kaiming_uniform 추가
   
   
   
-  <tr>  <td colspan="5"> lr=10e-5 </td> </tr>
+  <tr>  <td colspan="5"> <br><br>  lr=10e-5 </td> </tr>
   <tr>
         <td colspan="2">initializer X</td> <td></td>
         <td colspan="2">initializer O</td>
@@ -143,7 +143,7 @@ linear층 사이에는 kaiming_uniform 추가
   
   
   
-  <tr>  <td colspan="5"> lr=10e-6 </td> </tr>
+  <tr>  <td colspan="5"> <br><br>  lr=10e-6 </td> </tr>
   <tr>
         <td colspan="2">initializer X</td> <td></td>
         <td colspan="2">initializer O</td>
@@ -181,7 +181,7 @@ learning rate를 다양하게 해서 돌렸을V?? 때
 <table>
   <tr>  <td colspan="5"> lr=2*10e-5 </td> </tr>
   <tr>
-        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer X</td>
         <td colspan="2">initializer O</td>
   </tr>
   <tr>
