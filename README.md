@@ -77,6 +77,10 @@ linear층 사이에는 kaiming_uniform 추가
 <table>
   <tr>  <td colspan="5"> lr=10e-3 </td> </tr>
   <tr>
+        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer O</td>
+  </tr>
+  <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
         <td></td>
@@ -94,6 +98,10 @@ linear층 사이에는 kaiming_uniform 추가
   
   
   <tr>  <td colspan="5"> lr=10e-4 </td> </tr>
+  <tr>
+        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer O</td>
+  </tr>
   <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
@@ -114,6 +122,10 @@ linear층 사이에는 kaiming_uniform 추가
   
   <tr>  <td colspan="5"> lr=10e-5 </td> </tr>
   <tr>
+        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer O</td>
+  </tr>
+  <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
         <td></td>
@@ -133,6 +145,10 @@ linear층 사이에는 kaiming_uniform 추가
   
   <tr>  <td colspan="5"> lr=10e-6 </td> </tr>
   <tr>
+        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer O</td>
+  </tr>
+  <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
         <td></td>
@@ -147,15 +163,6 @@ linear층 사이에는 kaiming_uniform 추가
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix208.png", height=200px, width=250px>        </td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix208.png", height=200px, width=250px>   </td>
   </tr>
-  
-  <tr>
-      <td>lr=0.01 </td>
-      <td></td>
-      <td></td>
-      <td>lr=0.001 </td>
-      <td></td>
-  </tr>
-  
   
 </table>
 
@@ -174,9 +181,12 @@ learning rate를 다양하게 해서 돌렸을V?? 때
 <table>
   <tr>  <td colspan="5"> lr=2*10e-5 </td> </tr>
   <tr>
+        <td colspan="2">initializer X</td> <td></td>
+        <td colspan="2">initializer O</td>
+  </tr>
+  <tr>
         <td>training dataset</td>
         <td>validation dataset</td>
-        <td></td>
         <td>training dataset</td>
         <td>validation dataset</td>
   </tr>
@@ -188,11 +198,8 @@ learning rate를 다양하게 해서 돌렸을V?? 때
       <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix210.png", height=200px, width=250px>   </td>
   </tr>
   
-  <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>4</td>
-      <td>5</td>
+  <tr rowspan="2">
+      <td colspan="4">  epoch 200 </td>
   </tr>
   
   <tr>
