@@ -71,3 +71,74 @@
 
 
 ### 3. optimizer : Adam
+-----------
+<table>
+
+  <tr>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix201.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix201.png", height=250px, width=250px>   </td>
+      <td></td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix202.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix202.png", height=250px, width=250px>    </td>
+  </tr>
+  
+  <tr>
+      <td>lr=0.01 </td>
+      <td></td>
+      <td></td>
+      <td>lr=0.001 </td>
+      <td></td>
+  </tr>
+  
+  
+  <tr>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix203.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix203.png", height=250px, width=250px>   </td>
+      <td></td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix204.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix204.png", height=250px, width=250px>    </td>
+  </tr>
+  
+  <tr>
+      <td>lr=0.001 </td>
+      <td></td>
+      <td></td>
+      <td>lr=0.00001 </td>
+      <td></td>
+  </tr>
+  
+  
+  <tr>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix205.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix205.png", height=250px, width=250px>   </td>
+      <td></td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix206.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix206.png", height=250px, width=250px>    </td>
+  </tr>
+  
+  <tr>
+      <td>lr=0.01 </td>
+      <td></td>
+      <td></td>
+      <td>lr=0.001 </td>
+      <td></td>
+  </tr>
+  
+  <tr>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix207.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix207.png", height=250px, width=250px>   </td>
+      <td></td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix208.png", height=250px, width=250px>        </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix208.png", height=250px, width=250px>    </td>
+  </tr>
+  
+  <tr>
+      <td>lr=0.01 </td>
+      <td></td>
+      <td></td>
+      <td>lr=0.001 </td>
+      <td></td>
+  </tr>
+
+</table>
+
