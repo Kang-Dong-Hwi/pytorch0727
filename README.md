@@ -164,9 +164,9 @@
       <td>5</td>
   </tr>
   
-   <tr> <td><strong>
+   <tr> <td> <strong>
        <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam%20(1).png", height=250px, width=360px> 
-   </td></strong> </tr>
+   </strong> </td> </tr>
  
 
 </table>
