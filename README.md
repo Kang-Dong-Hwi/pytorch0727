@@ -10,7 +10,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix1.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/train_dataset_confusion_matrix2.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix2.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix2.png", height=250px, width=250px>   </td>
   </tr>
   
   
@@ -29,7 +29,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix3.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/train_dataset_confusion_matrix4.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix4.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix4.png", height=250px, width=250px>   </td>
   </tr>
   
   
@@ -54,7 +54,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix11.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/train_dataset_confusion_matrix12.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix12.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix12.png", height=250px, width=250px>   </td>
   </tr>
   
   <tr>
@@ -79,7 +79,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix201.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix202.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix202.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix202.png", height=250px, width=250px>   </td>
   </tr>
   
   <tr>
@@ -96,7 +96,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix203.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix204.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix204.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix204.png", height=250px, width=250px>   </td>
   </tr>
   
   <tr>
@@ -113,7 +113,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix205.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix206.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix206.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix206.png", height=250px, width=250px>   </td>
   </tr>
   
   <tr>
@@ -129,7 +129,7 @@
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix207.png", height=250px, width=250px>   </td>
       <td></td>
       <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive01/train_dataset_confusion_matrix208.png", height=250px, width=250px>        </td>
-      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix208.png", height=250px, width=250px>    </td>
+      <td>    <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/gdrive02/validation_dataset_confusion_matrix208.png", height=250px, width=250px>   </td>
   </tr>
   
   <tr>
@@ -142,3 +142,27 @@
 
 </table>
 
+------
+<table>
+
+  <tr>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/train_dataset_confusion_matrix211.png", height=250px, width=250px>        </td>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix211.png", height=250px, width=250px>   </td>
+      <td></td>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/train_dataset_confusion_matrix212.png", height=250px, width=250px>        </td>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/confusion_matrix/validation_dataset_confusion_matrix212.png", height=250px, width=250px>   </td>
+  </tr>
+  
+  <tr>
+      <td>1</td>
+      <td>2</td>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+  </tr>
+  
+  <tr>
+      <td>   <img src="https://github.com/Kang-Dong-Hwi/pytorch0727/blob/master/Adam(1).png", height=250px, width=250px>        </td>
+  </tr>
+
+</table>
